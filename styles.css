@@ -11,7 +11,8 @@ body {
 .header,
 .footer,
 .information-section,
-.quote-section {
+.quote-section,
+.contact-section {
     display: flex;
     flex-direction: column;
     padding: 10px 10%;
@@ -117,7 +118,6 @@ ul {
 }
 
 .button-fists {
-    width: 150px;
     align-self: flex-start;
     border: none;
 }
@@ -130,10 +130,12 @@ ul {
 }
 
 button {
-
+    flex: 0 0 auto;
+    height: 50px;
+    width: 150px;
     background-color: #3882f2;
     border-radius: 15px;
-    padding: 15px;
+    padding: 10px 15px;
     font-size: 18px;
     color: #ffffff;
 }
@@ -166,4 +168,30 @@ button {
 .autor {
     text-align: end;
     font-weight: 600;
+}
+
+.contact-section {
+    flex-direction: row;
+    margin: 100px 10%;
+    background-color: #3882f6;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    color: #e5e7eb;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.button-second {
+    border: solid 2px #ffffff;
+}
+
+.contact-header {
+    color: #ffffff;
+}
+
+.footer {
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
 }
