@@ -9,8 +9,9 @@ body {
 }
 
 .header,
-.main-container,
-.footer {
+.footer,
+.information-section,
+.quote-section {
     display: flex;
     flex-direction: column;
     padding: 10px 10%;
@@ -138,11 +139,10 @@ button {
 }
 
 .information-section {
-    display: flex;
     flex-flow: column wrap;
     align-items: center;
     gap: 20px;
-    padding: 20px 0 100px;
+    padding: 20px 10% 100px;
 }
 
 .information-header {
@@ -153,4 +153,17 @@ button {
 
 .main-container {
     flex: 1;
+}
+
+.quote-section {
+    background-color: #e5efeb;
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    padding: 100px 10%;
+}
+
+.autor {
+    text-align: end;
+    font-weight: 600;
 }
